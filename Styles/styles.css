@@ -1,0 +1,83 @@
+.fixed_top {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+}
+
+.item_links {
+    padding-left: 25px;
+    padding-bottom: 15px;
+}
+
+.lista_links {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: start;
+    align-items: flex-end;
+    list-style: none;
+}
+
+.lista_preselect {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: start;
+    align-items: flex-end;
+    list-style: none;
+}
+
+.nav_bar {
+    position: absolute;
+    height: 125px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 25px;
+}
+
+.nav_border {
+    border-bottom: 5px solid;
+    border-color: black;
+}
+
+.nav_img {
+    height: 75px;
+    width: 75px;
+    padding-bottom: 35px;
+}
+
+.nav_links {
+    margin-bottom: 25px;
+}
+
+.nav_text {
+    font-weight: bold;
+    align-items: center;
+    font-size: 35px;
+    text-decoration: none;
+    font-family: 'Red Hat Mono';
+}
+
+.underline_links {
+    text-decoration: none;
+}
+
+
+/*
+ESTILOS MODO CLARO
+*/
+
+#nav_light {
+    background-color: #DDDDDD;
+}
+
+.body_light {
+    background-color: #F4F9F9;
+}
+
+
+/*
+ESTILOS MODO OSCURO
+*/
