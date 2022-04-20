@@ -1,6 +1,45 @@
+/*
+IDS
+*/
+
+#noticias {
+    margin-top: 12rem;
+}
+
+#nosotros {
+    margin-top: 50px;
+    border-top: 10px solid;
+    border-bottom: 10px solid;
+    border-color: #4E944F;
+    position: fixed;
+    right: 0;
+    left: 0;
+}
+
+
+/*
+CLASES
+*/
+
+.act_noticias {
+    font-family: 'Red Hat Mono';
+    text-align: center;
+}
+
+.col_historia {
+    padding: 10px;
+}
+
 .container_dark {
     border: 15px solid;
     border-color: black;
+    border-radius: 5px;
+    border-width: 2px;
+}
+
+.container_light {
+    border: 15px solid;
+    border-color: aliceblue;
     border-radius: 5px;
     border-width: 2px;
 }
@@ -15,6 +54,11 @@
 
 .img_dark {
     height: 50px;
+    width: 50px;
+}
+
+.img_light {
+    height: 51px;
     width: 50px;
 }
 
@@ -49,8 +93,8 @@
 }
 
 .nav_border {
-    border-bottom: 5px solid;
-    border-color: black;
+    border-bottom: 10px solid;
+    border-color: #4E944F;
 }
 
 .nav_img {
@@ -91,12 +135,29 @@
     padding-left: 15px;
 }
 
+.titulo_noticias {
+    font-family: 'Red Hat Mono';
+    text-align: center;
+}
+
+.titulo_historia {
+    font-family: 'Red Hat Mono';
+    text-align: center;
+}
+
 .text_moneda {
     position: absolute;
     top: 40px;
     font-family: 'Red Hat Mono';
     font-size: large;
     text-decoration: underline;
+}
+
+.texto_historia {
+    font-family: 'Red Hat Mono';
+    text-align: justify;
+    font-size: medium;
+    font-weight: 500;
 }
 
 .underline_links {
