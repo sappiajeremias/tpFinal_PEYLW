@@ -18,6 +18,18 @@ IDS
 
 #noticias_portadas {
     margin-top: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#noticia2 {
+    margin-left: 100px;
+}
+
+#noticia3 {
+    margin: 50px;
 }
 
 
@@ -30,14 +42,36 @@ CLASES
     text-align: center;
 }
 
-.boton_color {
+.boton_color1 {
     background-color: whitesmoke;
     border-color: black;
     border-radius: 7px;
 }
 
-.boton_color:hover {
+.boton_color2 {
+    background-color: whitesmoke;
+    border-color: black;
+    border-radius: 7px;
+}
+
+.boton_color3 {
+    background-color: whitesmoke;
+    border-color: black;
+    border-radius: 7px;
+}
+
+.boton_color1:hover {
     background-color: #4E944F;
+    box-shadow: 10px 5px 15px black;
+}
+
+.boton_color2:hover {
+    background-color: #A2D5AB;
+    box-shadow: 10px 5px 15px black;
+}
+
+.boton_color3:hover {
+    background-color: #83BD75;
     box-shadow: 10px 5px 15px black;
 }
 
@@ -152,7 +186,7 @@ CLASES
     font-family: 'Red Hat Mono';
 }
 
-.noticia_titulo1 {
+.noticia_titulo {
     text-align: center;
     font-size: large;
     font-family: 'PT Serif', serif;
