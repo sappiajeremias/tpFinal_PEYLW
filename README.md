@@ -18,4 +18,4 @@ CARRERA: TUDW
 
 El trabajo final consta de una página con un tema a elección propia. En mi caso, decidí realizar una página de un club de fútbol.</br> 
 Dentro de la página se van a incluir los lenguajes de programación vistos en la materia: <b>HTML, CSS, JavaScript</b>.</br>
-Mi objetivo es realizar una página desde cero que sea funcional, fácil de navegar y que simule de la manera mas precisa lo que sería una página profesional.
+Mi objetivo es realizar una página desde cero que sea funcional, fácil de navegar y que intente ser lo mas parecida a lo que sería una página profesional.
