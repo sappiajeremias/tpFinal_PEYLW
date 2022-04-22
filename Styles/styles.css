@@ -16,6 +16,10 @@ IDS
     left: 0;
 }
 
+#noticias_portadas {
+    margin-top: 25px;
+}
+
 
 /*
 CLASES
@@ -24,6 +28,23 @@ CLASES
 .act_noticias {
     font-family: 'Red Hat Mono';
     text-align: center;
+}
+
+.boton_color {
+    background-color: whitesmoke;
+    border-color: black;
+    border-radius: 7px;
+}
+
+.boton_color:hover {
+    background-color: #4E944F;
+    box-shadow: 10px 5px 15px black;
+}
+
+.boton_pos {
+    width: 150px;
+    height: 30px;
+    margin-top: 7px;
 }
 
 .col_historia {
@@ -65,6 +86,15 @@ CLASES
 .item_links {
     padding-left: 25px;
     padding-bottom: 15px;
+}
+
+.img_noticia_centrada {
+    text-align: center;
+}
+
+.img_noticia_portada {
+    width: 700px;
+    height: 500px;
 }
 
 .lista_links {
@@ -122,6 +152,18 @@ CLASES
     font-family: 'Red Hat Mono';
 }
 
+.noticia_titulo1 {
+    text-align: center;
+    font-size: large;
+    font-family: 'PT Serif', serif;
+    font-weight: bolder;
+}
+
+.noticia_boton {
+    text-align: center;
+    padding-top: 15px;
+}
+
 .preselect {
     margin-right: 15px;
 }
@@ -138,6 +180,9 @@ CLASES
 .titulo_noticias {
     font-family: 'Red Hat Mono';
     text-align: center;
+    font-weight: bold;
+    font-size: 50px;
+    font-style: italic;
 }
 
 .titulo_historia {
@@ -174,7 +219,7 @@ ESTILOS MODO CLARO
 }
 
 .body_light {
-    background-color: #F4F9F9;
+    background-color: #E9EFC0;
 }
 
 
