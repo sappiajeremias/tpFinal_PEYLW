@@ -1,3 +1,9 @@
+body {
+    width: max-content;
+    overflow-x: hidden;
+}
+
+
 /*
 IDS
 */
@@ -9,11 +15,9 @@ IDS
 #nosotros {
     margin-top: 50px;
     border-top: 10px solid;
-    border-bottom: 10px solid;
     border-color: #4E944F;
-    position: fixed;
-    right: 0;
-    left: 0;
+    position: relative;
+    left: -8px;
 }
 
 #noticias_portadas {
@@ -82,7 +86,10 @@ CLASES
 }
 
 .col_historia {
-    padding: 10px;
+    padding-left: 75px;
+    padding-right: 75px;
+    padding-top: 10px;
+    margin: 25px;
 }
 
 .container_dark {
@@ -122,6 +129,12 @@ CLASES
     padding-bottom: 15px;
 }
 
+.itemRedes {
+    padding-right: 50px;
+    align-items: flex-end;
+    float: right;
+}
+
 .img_noticia_centrada {
     text-align: center;
 }
@@ -129,6 +142,21 @@ CLASES
 .img_noticia_portada {
     width: 700px;
     height: 500px;
+}
+
+.imgMail {
+    height: 100px;
+    width: 100px;
+}
+
+.imgGit {
+    height: 100px;
+    width: 100px;
+}
+
+.imglinkedin {
+    height: 100px;
+    width: 100px;
 }
 
 .lista_links {
@@ -144,6 +172,14 @@ CLASES
     flex-wrap: wrap;
     align-items: flex-end;
     list-style: none;
+}
+
+.listaRedes {
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    width: 100%;
+    margin-right: 500px;
 }
 
 .nav_bar {
@@ -186,6 +222,19 @@ CLASES
     font-family: 'Red Hat Mono';
 }
 
+.nav_text:hover {
+    color: #A2D5AB;
+}
+
+.nombreRedes {
+    display: inline;
+    justify-content: flex-start;
+    list-style: none;
+    width: 100%;
+    padding-right: 50px;
+    padding-top: 10px;
+}
+
 .noticia_titulo {
     text-align: center;
     font-size: large;
@@ -207,6 +256,11 @@ CLASES
     padding-bottom: 70px;
 }
 
+.redes {
+    background-color: #DDDDDD;
+    width: 100%;
+}
+
 .select_moneda {
     padding-left: 15px;
 }
@@ -215,13 +269,16 @@ CLASES
     font-family: 'Red Hat Mono';
     text-align: center;
     font-weight: bold;
-    font-size: 50px;
+    font-size: 60px;
     font-style: italic;
 }
 
 .titulo_historia {
     font-family: 'Red Hat Mono';
     text-align: center;
+    font-weight: bold;
+    font-size: 65px;
+    font-style: italic;
 }
 
 .text_moneda {
@@ -234,8 +291,8 @@ CLASES
 
 .texto_historia {
     font-family: 'Red Hat Mono';
-    text-align: justify;
-    font-size: medium;
+    text-align: center;
+    font-size: large;
     font-weight: 500;
 }
 
@@ -254,6 +311,19 @@ ESTILOS MODO CLARO
 
 .body_light {
     background-color: #E9EFC0;
+    width: 100%;
+}
+
+.footer_light {
+    background-color: #DDDDDD;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    height: max-content;
+    position: relative;
+    left: -8px;
+    bottom: -8px;
+    border-top: 10px solid;
+    border-color: #4E944F;
 }
 
 
