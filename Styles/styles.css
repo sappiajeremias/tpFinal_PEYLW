@@ -14,6 +14,7 @@ IDS
 
 #nosotros {
     margin-top: 50px;
+    margin-bottom: 50px;
     border-top: 10px solid;
     border-color: #4E944F;
     position: relative;
@@ -88,8 +89,10 @@ CLASES
 .col_historia {
     padding-left: 75px;
     padding-right: 75px;
-    padding-top: 10px;
     margin: 25px;
+    width: 50%;
+    height: 100px;
+    text-align: center;
 }
 
 .container_dark {
@@ -115,6 +118,7 @@ CLASES
 }
 
 .img_dark {
+    margin-top: 25px;
     height: 50px;
     width: 50px;
 }
@@ -145,18 +149,18 @@ CLASES
 }
 
 .imgMail {
-    height: 100px;
-    width: 100px;
+    height: 75px;
+    width: 75px;
 }
 
 .imgGit {
-    height: 100px;
-    width: 100px;
+    height: 75px;
+    width: 75px;
 }
 
 .imglinkedin {
-    height: 100px;
-    width: 100px;
+    height: 75px;
+    width: 75px;
 }
 
 .lista_links {
@@ -172,6 +176,13 @@ CLASES
     flex-wrap: wrap;
     align-items: flex-end;
     list-style: none;
+}
+
+.lista_disciplinas {
+    align-items: flex-start;
+    list-style: none;
+    font-family: 'Red Hat Mono';
+    text-align: start;
 }
 
 .listaRedes {
@@ -201,13 +212,6 @@ CLASES
     height: 75px;
     width: 75px;
     padding-bottom: 35px;
-}
-
-.nav_img_profile {
-    height: 95px;
-    width: 85px;
-    padding-bottom: 45px;
-    padding-right: 25px;
 }
 
 .nav_links {
@@ -265,6 +269,13 @@ CLASES
     padding-left: 15px;
 }
 
+.titulo_disciplinas {
+    font-family: 'Red Hat Mono';
+    text-align: start;
+    font-weight: bolder;
+    text-decoration: underline;
+}
+
 .titulo_noticias {
     font-family: 'Red Hat Mono';
     text-align: center;
@@ -274,10 +285,27 @@ CLASES
 }
 
 .titulo_historia {
+    color: #15133C;
     font-family: 'Red Hat Mono';
+    text-decoration: underline;
     text-align: center;
     font-weight: bold;
     font-size: 65px;
+    font-style: italic;
+}
+
+.titulo_texto_historia {
+    font-family: 'Red Hat Mono';
+    padding-bottom: 25px;
+    font-weight: bold;
+    font-size: 25px;
+    font-style: italic;
+}
+
+.titulo_texto_disciplinas {
+    font-family: 'Red Hat Mono';
+    font-weight: bold;
+    font-size: 25px;
     font-style: italic;
 }
 
@@ -294,6 +322,7 @@ CLASES
     text-align: center;
     font-size: large;
     font-weight: 500;
+    text-align: justify;
 }
 
 .underline_links {
