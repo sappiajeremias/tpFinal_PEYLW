@@ -1,12 +1,19 @@
 body {
     width: max-content;
     overflow-x: hidden;
+    font-family: 'Red Hat Mono';
 }
 
 
 /*
 IDS
 */
+
+#ct_equipo {
+    position: absolute;
+    top: 175px;
+    left: 50px;
+}
 
 #noticias {
     margin-top: 12rem;
@@ -35,6 +42,12 @@ IDS
 
 #noticia3 {
     margin: 50px;
+}
+
+#tabla_jugadores {
+    position: absolute;
+    top: 900px;
+    left: 50px;
 }
 
 
@@ -109,6 +122,22 @@ CLASES
     border-width: 2px;
 }
 
+.dorsal_arquero {
+    background-color: #2F8F9D;
+}
+
+.dorsal_defensor {
+    background-color: #3BACB6;
+}
+
+.dorsal_mediocampista {
+    background-color: #82DBD8;
+}
+
+.dorsal_delantero {
+    background-color: #B3E8E5;
+}
+
 .fixed_top {
     position: fixed;
     top: 0;
@@ -146,6 +175,11 @@ CLASES
 .img_noticia_portada {
     width: 700px;
     height: 500px;
+}
+
+.img_tabla_ct {
+    width: 40px;
+    height: 35px;
 }
 
 .imgMail {
@@ -269,6 +303,19 @@ CLASES
     padding-left: 15px;
 }
 
+.subtitulo_jugadores {
+    position: absolute;
+    top: 800px;
+    left: 50px;
+    font-size: 25px;
+    text-decoration: underline;
+}
+
+.subtitulo_plantilla {
+    font-size: 25px;
+    text-decoration: underline;
+}
+
 .titulo_disciplinas {
     font-family: 'Red Hat Mono';
     text-align: start;
@@ -309,6 +356,12 @@ CLASES
     font-style: italic;
 }
 
+.titulo_plantilla {
+    font-size: 50px;
+    font-family: 'Red Hat Mono';
+    font-style: italic;
+}
+
 .text_moneda {
     position: absolute;
     top: 40px;
@@ -327,6 +380,60 @@ CLASES
 
 .underline_links {
     text-decoration: none;
+}
+
+
+/*
+ESTILOS COMBINADOS
+*/
+
+table#tabla_jugadores thead tr th {
+    background: #c5c5c5;
+}
+
+table thead tr th.fila_jugadores_s {
+    padding: 5px 5px;
+    text-align: center;
+    border: 1px solid rgb(14, 14, 14);
+    width: 5px;
+}
+
+table thead tr th.fila_jugadores_m {
+    padding: 10px 10px;
+    text-align: center;
+    border: 1px solid rgb(14, 14, 14);
+    width: 150px;
+}
+
+table thead tr th.fila_jugadores_l {
+    padding: 10px 10px;
+    text-align: center;
+    border: 1px solid rgb(14, 14, 14);
+    width: 350px;
+}
+
+table .fila_ct_pos {
+    padding: 10px 10px;
+    text-align: center;
+    border: 1px solid rgb(14, 14, 14);
+    background: #c5c5c5;
+    width: 250px;
+}
+
+table .fila_ct {
+    padding: 10px 10px;
+    text-align: center;
+    border: 1px solid rgb(14, 14, 14);
+    background: #c5c5c5;
+    width: 50px;
+}
+
+table tbody tr td {
+    padding: 10px 10px;
+    text-align: center;
+    border: 1px solid rgb(14, 14, 14);
+    background: #f5f5f5;
+    width: 50px;
 }
 
 
