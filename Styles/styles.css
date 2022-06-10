@@ -18,6 +18,12 @@ IDS
     left: 50px;
 }
 
+#jugadores_equipo {
+    width: 90%;
+    position: absolute;
+    left: 50px;
+}
+
 #noticias {
     margin-top: 12rem;
 }
@@ -48,9 +54,10 @@ IDS
 }
 
 #tabla_jugadores {
+    width: 100%;
     position: absolute;
     top: 900px;
-    left: 150px;
+    left: 25px;
 }
 
 #tabla_pos {
@@ -181,6 +188,10 @@ CLASES
 
 .dorsal_delantero {
     background-color: #B3E8E5;
+}
+
+.clasificados_lib {
+    background-color: #DAEAF1;
 }
 
 .fixed_top {
@@ -397,7 +408,7 @@ CLASES
 .subtitulo_jugadores {
     position: absolute;
     top: 800px;
-    left: 150px;
+    left: 25px;
     font-size: 25px;
     text-decoration: underline;
 }
@@ -409,6 +420,11 @@ CLASES
 
 .tabla_tit_opc {
     align-items: center;
+    width: 90%;
+    margin-left: 85px;
+}
+
+.tabla_libertadores_pos {
     width: 90%;
     margin-left: 85px;
 }
@@ -506,11 +522,7 @@ CLASES
 ESTILOS COMBINADOS
 */
 
-table#tabla_jugadores thead tr th {
-    background: #c5c5c5;
-}
-
-table#tabla_pos thead tr th {
+table thead tr th {
     background: #c5c5c5;
 }
 
