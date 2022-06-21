@@ -60,16 +60,16 @@
                     <p class="titulo_competicion">Primera División Argentina</p>
                 </td>
                 <td class="col_opciones">
-                    <select name="Competiciones" size="1" class="selector_opciones">
-                        <option value="Primera División Argentina">Primera División Argentina</option>
-                        <option value="Copa Libertadores de América">Copa Libertadores de América</option>
+                    <select id="selectCopas" name="Competiciones" size="1" class="selector_opciones" onchange="cambiarCopas()">
+                        <option value="1">Primera División Argentina</option>
+                        <option value="2">Copa Libertadores de América</option>
                     </select>
                 </td>
             </tr>
         </table>
     </div>
 
-    <div id="copa1" hidden>
+    <div id="copa1">
         <div id="graficos_posiciones" class="tabla_posiciones">
 
             <table id="tabla_pos">
@@ -445,7 +445,7 @@
 
     </div>
 
-    <div id="copa2">
+    <div id="copa2" hidden>
         <div id="graficos_posiciones" class="tabla_posiciones">
             <table id="tabla_libertadores" class="tabla_libertadores_pos">
                 <thead>
@@ -546,7 +546,58 @@
                 </tbody>
             </table>
         </div>
+        <div class="partidos_libertadores">
+            <div class="container_titulos">
+
+                <h2 class="titulo_texto_posiciones">Próximos Partidos</h2>
+                <h2 class="titulo_texto_posiciones">Ronda</h2>
+
+            </div>
+            <div class="container_partidos">
+                <ul class="lista_partidos">
+                    <li>
+                        <p> 29/06 - (V) vs Vélez</p>
+
+                    </li>
+                    <li>
+                        <p> 06/07 - (L) vs Vélez</p>
+
+                    </li>
+                    <li>
+                        <p> Semana de 03/08 - (V) vs - </p>
+
+                    </li>
+                    <li>
+                        <p> Semana de 10/08 - (L) vs - </p>
+
+                    </li>
+                    <li>
+                        <p> Semana de 31/08 - (V) vs - </p>
+
+                    </li>
+                </ul>
+
+                <ul class="lista_partidos">
+                    <li>
+                        <p> Octavos de Final </p>
+                    </li>
+                    <li>
+                        <p> Octavos de Final </p>
+                    </li>
+                    <li>
+                        <p> Cuartos de Final </p>
+                    </li>
+                    <li>
+                        <p> Cuartos de Final </p>
+                    </li>
+                    <li>
+                        <p> Semifinales </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </div>
+
     <div class="footer_light_pos">
         <div class="redes">
             <ul class="listaRedes">
@@ -565,4 +616,6 @@
             </ul>
         </div>
     </div>
+
+    <script src="../scripts.js"></script>
 </body>

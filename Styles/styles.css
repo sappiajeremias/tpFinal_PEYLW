@@ -291,7 +291,7 @@ CLASES
     list-style: none;
 }
 
-.lista_partidos {
+#copa1 .lista_partidos {
     width: 400px;
     padding-left: 0;
     padding-right: 100px;
@@ -395,6 +395,10 @@ CLASES
     padding-bottom: 70px;
 }
 
+.partidos_libertadores {
+    margin-top: 250px;
+}
+
 .redes {
     background-color: #DDDDDD;
     width: 100%;
@@ -478,6 +482,7 @@ CLASES
 }
 
 .titulo_texto_posiciones {
+    width: 450px;
     font-family: 'Joan', serif;
     text-decoration: underline;
     padding-bottom: 15px;
@@ -579,11 +584,26 @@ table tbody tr td {
     width: 50px;
 }
 
+#copa2 ul.lista_partidos {
+    width: 1250px;
+    padding-left: 100px;
+}
+
+#copa2 .lista_partidos li {
+    width: 750px;
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+    padding-bottom: 10px;
+    font-family: 'Joan', serif;
+    font-size: 50px;
+}
+
 .lista_partidos li {
     width: 450px;
     padding-bottom: 10px;
     font-family: 'Joan', serif;
-    font-size: 35px;
+    font-size: 50px;
 }
 
 
