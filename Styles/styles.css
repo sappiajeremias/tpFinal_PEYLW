@@ -120,6 +120,24 @@ CLASES
     margin-top: 7px;
 }
 
+.botones_usuario {
+    float: right;
+    padding-right: 2.5rem;
+}
+
+.botones_usuario input {
+    background-color: transparent;
+    height: 40px;
+    width: 110px;
+    font-family: 'Joan', serif;
+    font-size: 20px;
+}
+
+.botones_usuario input:hover {
+    box-shadow: 5px 5px 15px black;
+    background-color: #D6D5A8;
+}
+
 .col_historia {
     padding-left: 75px;
     padding-right: 75px;
@@ -167,11 +185,28 @@ CLASES
     border-width: 2px;
 }
 
+.container_dark:hover {
+    background-color: darkslategray;
+}
+
 .container_light {
     border: 15px solid;
-    border-color: aliceblue;
+    border-color: black;
     border-radius: 5px;
     border-width: 2px;
+}
+
+.container_light:hover {
+    background-color: darkolivegreen;
+}
+
+.container_tit_usuario {
+    position: absolute;
+    top: 12.5rem;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    padding-left: 2.5rem;
 }
 
 .dorsal_arquero {
@@ -200,6 +235,28 @@ CLASES
     right: 0;
     left: 0;
     z-index: 1030;
+}
+
+.formulario_usuario {
+    margin-left: 50px;
+    height: 350px;
+    width: 90%;
+    vertical-align: middle;
+    border: 2px solid #06283D;
+    border-radius: 5px;
+    position: absolute;
+    top: 20rem;
+    padding-top: 2.5rem;
+    padding-left: 2.5rem;
+    padding-bottom: 40px;
+}
+
+.formulario_usuario * {
+    height: 25px;
+    margin-bottom: 25px;
+    margin-left: 15px;
+    font-family: 'Joan', serif;
+    font-size: 20px;
 }
 
 .img_dark {
@@ -257,6 +314,11 @@ CLASES
     width: 20px;
     height: 20px;
     padding-left: 10px;
+}
+
+.img_usuario {
+    width: 75px;
+    height: 75px;
 }
 
 .links_no_deco {
@@ -324,7 +386,10 @@ CLASES
 }
 
 .nav_bar {
-    position: absolute;
+    position: relative;
+    top: -15px;
+    left: -9px;
+    width: 100%;
     height: 125px;
     display: flex;
     flex-wrap: wrap;
@@ -399,6 +464,10 @@ CLASES
     margin-top: 250px;
 }
 
+.provincias {
+    margin-left: 25px;
+}
+
 .redes {
     background-color: #DDDDDD;
     width: 100%;
@@ -464,6 +533,11 @@ CLASES
     font-weight: bold;
     font-size: 65px;
     font-style: italic;
+}
+
+.titulo_usuario {
+    padding-left: 25px;
+    font-family: 'Joan', serif;
 }
 
 .titulo_texto_historia {
@@ -604,6 +678,10 @@ table tbody tr td {
     padding-bottom: 10px;
     font-family: 'Joan', serif;
     font-size: 50px;
+}
+
+.nav_bar a {
+    color: #15133C;
 }
 
 

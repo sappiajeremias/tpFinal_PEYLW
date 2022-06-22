@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Perfil</title>
+    <link href="../Styles/styles.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@1,700&family=Red+Hat+Mono:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Joan&family=PT+Serif:ital,wght@1,700&family=Red+Hat+Mono:wght@300&display=swap" rel="stylesheet">
+</head>
+
+
+<body id="top" class="body_light">
+
+    <div id="nav_light" class="nav_bar fixed_top nav_border">
+        <div class="nav_links">
+            <ul class="lista_links">
+                <li class="">
+                    <!--Link al tope de la pagina-->
+                    <a href="../index.html"><img src="../Assets/Images/Logo-sin-wt .png" class="nav_img" /></a>
+                </li>
+                <li class="item_links">
+                    <!--Link al equipo-->
+                    <a href="equipo.html" class="underline_links">
+                        <p class="nav_text">EQUIPO</p>
+                    </a>
+                </li>
+                <li class="item_links">
+                    <!--Link a las posiciones-->
+                    <a href="posicion.html" class="underline_links">
+                        <p class="nav_text">POSICION</p>
+                    </a>
+                </li>
+                <li class="item_links">
+                    <!--Link al perfil-->
+                    <a href="#top" class="underline_links">
+                        <p class="nav_text">PERFIL</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="preselect">
+            <ul class="lista_preselect">
+                <li class="preselect_links">
+                    <a href=""><img src="../Assets/Images/dark.png" class="img_dark container_dark"></a>
+                </li>
+                <li class="preselect_links">
+                    <a href=""><img src="../Assets/Images/light.png" class="img_light container_light"></a>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+
+    <div class="container_tit_usuario">
+
+        <img src="../Assets/Images/usuario.png" class="img_usuario">
+        <h1 class="titulo_usuario">TU PERFIL: </h1>
+
+    </div>
+
+    <div>
+
+        <form id="form" class="formulario_usuario">
+            <p>Nombre:
+                <input type="text" id="nombre_U" required value="" tabindex="0" />
+            </p>
+            <p>Mail
+                <input type="email" id="mail_U" required value="" tabindex="1" />
+            </p>
+            <p>Fecha de Nacimiento:
+                <input type="date" id="fecha_U" required value="" tabindex="2" />
+            </p>
+            <p>Sexo:
+                <input type="radio" value="H" name="sexo" required> Hombre
+                <input type="radio" value="M" name="sexo" required> Mujer
+                <input type="radio" value="O" name="sexo" required> Otro
+            </p>
+            <p>Selecciona tu provincia
+                <select id="select_provincias" class="provincias" required>
+                <option value="1">BUENOS AIRES</option>
+                <option value="2">CATAMARCA</option>
+                <option value="3">CHACO</option>
+                <option value="4">CHUBUT</option>
+                <option value="5">CIUDAD AUTONOMA DE Bs As</option>
+                <option value="6">CORDOBA</option>
+                <option value="7">CORRIENTES</option>
+                <option value="8">ENTRE RIOS</option>
+                <option value="9">FORMOSA</option>
+                <option value="23">JUJUY</option>
+                <option value="10">LA PAMPA</option>
+                <option value="11">LA RIOJA</option>
+                <option value="12">MENDOZA</option>
+                <option value="13">MISIONES</option>
+                <option value="14">NEUQUEN</option>
+                <option value="15">RIO NEGRO</option>
+                <option value="16">SALTA</option>
+                <option value="17">SAN LUIS</option>
+                <option value="19">SANTA CRUZ</option>
+                <option value="20">SANTA FE</option>
+                <option value="21">SANTIAGO DEL ESTERO</option>
+                <option value="22">TIERRA DEL FUEGO</option>
+                <option disabled="true" selected value="">-</option>
+            </select>
+            </p>
+            <p>
+                Jugador/a ? :
+                <input type="radio" value="Si" name="jugador" required> Si
+                <input type="radio" value="No" name="jugador" required> No
+            </p>
+            <p class="botones_usuario">
+                <input type="submit" value="Enviar" onsubmit="mostrarPerfil()">
+                <input type="reset" value="Borrar">
+            </p>
+        </form>
+
+    </div>
+
+
+
+
+</body>
