@@ -60,64 +60,98 @@
 
     </div>
 
-    <div>
+    <div id="form_perfil">
 
         <form id="form" class="formulario_usuario">
             <p>Nombre:
                 <input type="text" id="nombre_U" required value="" tabindex="0" />
             </p>
-            <p>Mail
+            <p>Mail:
                 <input type="email" id="mail_U" required value="" tabindex="1" />
             </p>
             <p>Fecha de Nacimiento:
                 <input type="date" id="fecha_U" required value="" tabindex="2" />
             </p>
             <p>Sexo:
-                <input type="radio" value="H" name="sexo" required> Hombre
-                <input type="radio" value="M" name="sexo" required> Mujer
-                <input type="radio" value="O" name="sexo" required> Otro
+                <input type="radio" value="1" name="sexo" required> Hombre
+                <input type="radio" value="2" name="sexo" required> Mujer
+                <input type="radio" value="3" name="sexo" required> Otro
             </p>
-            <p>Selecciona tu provincia
+            <p>Selecciona tu provincia:
                 <select id="select_provincias" class="provincias" required>
-                <option value="1">BUENOS AIRES</option>
-                <option value="2">CATAMARCA</option>
-                <option value="3">CHACO</option>
-                <option value="4">CHUBUT</option>
-                <option value="5">CIUDAD AUTONOMA DE Bs As</option>
-                <option value="6">CORDOBA</option>
-                <option value="7">CORRIENTES</option>
-                <option value="8">ENTRE RIOS</option>
-                <option value="9">FORMOSA</option>
-                <option value="23">JUJUY</option>
-                <option value="10">LA PAMPA</option>
-                <option value="11">LA RIOJA</option>
-                <option value="12">MENDOZA</option>
-                <option value="13">MISIONES</option>
-                <option value="14">NEUQUEN</option>
-                <option value="15">RIO NEGRO</option>
-                <option value="16">SALTA</option>
-                <option value="17">SAN LUIS</option>
-                <option value="19">SANTA CRUZ</option>
-                <option value="20">SANTA FE</option>
-                <option value="21">SANTIAGO DEL ESTERO</option>
-                <option value="22">TIERRA DEL FUEGO</option>
+                <option value="BUENOS AIRES">BUENOS AIRES</option>
+                <option value="CATAMARCA">CATAMARCA</option>
+                <option value="CHACO">CHACO</option>
+                <option value="CHUBUT">CHUBUT</option>
+                <option value="CIUDAD AUTONOMA DE Bs As">CIUDAD AUTONOMA DE Bs As</option>
+                <option value="CORDOBA">CORDOBA</option>
+                <option value="CORRIENTES">CORRIENTES</option>
+                <option value="ENTRE RIOS">ENTRE RIOS</option>
+                <option value="FORMOSA">FORMOSA</option>
+                <option value="JUJUY">JUJUY</option>
+                <option value="LA PAMPA">LA PAMPA</option>
+                <option value="LA RIOJA">LA RIOJA</option>
+                <option value="MENDOZA">MENDOZA</option>
+                <option value="MISIONES">MISIONES</option>
+                <option value="NEUQUEN">NEUQUEN</option>
+                <option value="RIO NEGRO">RIO NEGRO</option>
+                <option value="SALTA">SALTA</option>
+                <option value="SAN LUIS">SAN LUIS</option>
+                <option value="SANTA CRUZ">SANTA CRUZ</option>
+                <option value="SANTA FE">SANTA FE</option>
+                <option value="SANTIAGO DEL ESTERO">SANTIAGO DEL ESTERO</option>
+                <option value="TIERRA DEL FUEGO">TIERRA DEL FUEGO</option>
                 <option disabled="true" selected value="">-</option>
             </select>
             </p>
             <p>
                 Jugador/a ? :
-                <input type="radio" value="Si" name="jugador" required> Si
-                <input type="radio" value="No" name="jugador" required> No
+                <input type="radio" value="1" name="jugador" required> Si
+                <input type="radio" value="2" name="jugador" required> No
             </p>
             <p class="botones_usuario">
-                <input type="submit" value="Enviar" onsubmit="mostrarPerfil()">
+                <input type="button" value="Enviar" onclick="mostrarPerfil()">
                 <input type="reset" value="Borrar">
             </p>
         </form>
-
     </div>
 
 
+    <div id="info_perfil" hidden>
 
+        <div class="container_usuario">
 
+            <p id="nombre_P"><span class="span_perfil">Nombre: </span></p>
+            <p id="mail_P"><span class="span_perfil">Mail: </span> </p>
+            <p id="fecha_P"><span class="span_perfil">Fecha: </span> </p>
+            <p id="sexo_P"><span class="span_perfil">Sexo: </span> </p>
+            <p id="provincia_P"><span class="span_perfil">Provincia: </span> </p>
+            <p id="jugador_P"><span class="span_perfil">Es jugador/a: </span> </p>
+            <p id="boton_reiniciar" class="botones_usuario">
+                <input type="button" value="Reiniciar" onclick="window.location.reload()">
+            </p>
+        </div>
+
+    </div>
+
+    <div class="footer_light_perfil">
+        <div class="redes">
+            <ul class="listaRedes">
+                <li class="nombreRedes">
+                    <h1 class="tituloFooter">WE, TOGETHER</h1>
+                </li>
+                <li class="itemRedes">
+                    <a href="mailto:jeremiassappia@gmail.com"><img class="imgMail" src="../Assets/Images/mail.png" /></a>
+                </li>
+                <li class="itemRedes">
+                    <a href="https://github.com/sappiajeremias" target="_blank"><img class="imgGit" src="../assets/images/git.jpg" /></a>
+                </li>
+                <li class="itemRedes">
+                    <a href="https://www.linkedin.com/in/jeremias-sappia-a83028214/" target="_blank"><img class="imglinkedin" src="../assets/images/linkedin.png" /></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="../scripts.js"></script>
 </body>

@@ -17,3 +17,48 @@ function cambiarCopas() {
 
     }
 }
+
+
+function reiniciar() {
+    window.location.reload();
+}
+
+
+function mostrarPerfil() {
+    //Variables a las que tomamos su value
+    let nombre, mail, fecha, sexo, provincia, jugador, formulario, perfil;
+
+
+    formulario = document.getElementById("form_perfil");
+    perfil = document.getElementById("info_perfil");
+    nombre = document.getElementById("nombre_U").value;
+    mail = document.getElementById("mail_U").value;
+    fecha = document.getElementById("fecha_U").value;
+    sexo = document.getElementsByName("sexo");
+    provincia = document.getElementById("select_provincias").value;
+    jugador = document.getElementsByName("jugador");
+
+    if (sexo[0].checked) {
+        sexo = "Hombre";
+    } else if (sexo[1].checked) {
+        sexo = "Mujer";
+    } else {
+        sexo = "Otro";
+    }
+
+    if (jugador[0].checked) {
+        jugador = "SI";
+    } else {
+        jugador = "NO";
+    }
+
+    formulario.setAttribute("hidden", true);
+    perfil.removeAttribute("hidden");
+
+    document.getElementById("nombre_P").innerHTML = document.getElementById("nombre_P").innerHTML + nombre;
+    document.getElementById("mail_P").innerHTML = document.getElementById("mail_P").innerHTML + mail;
+    document.getElementById("fecha_P").innerHTML = document.getElementById("fecha_P").innerHTML + fecha;
+    document.getElementById("sexo_P").innerHTML = document.getElementById("sexo_P").innerHTML + sexo;
+    document.getElementById("provincia_P").innerHTML = document.getElementById("provincia_P").innerHTML + provincia;
+    document.getElementById("jugador_P").innerHTML = document.getElementById("jugador_P").innerHTML + jugador;
+}
