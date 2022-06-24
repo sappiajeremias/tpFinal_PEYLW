@@ -20,7 +20,11 @@ function cambiarCopas() {
 
 
 function reiniciar() {
-    window.location.reload();
+    let formulario, perfil;
+    formulario = document.getElementById("form_perfil");
+    perfil = document.getElementById("info_perfil");
+    perfil.setAttribute("hidden", true);
+    formulario.removeAttribute("hidden");
 }
 
 
@@ -61,4 +65,153 @@ function mostrarPerfil() {
     document.getElementById("sexo_P").innerHTML = document.getElementById("sexo_P").innerHTML + sexo;
     document.getElementById("provincia_P").innerHTML = document.getElementById("provincia_P").innerHTML + provincia;
     document.getElementById("jugador_P").innerHTML = document.getElementById("jugador_P").innerHTML + jugador;
+}
+
+
+function cambiarANocheIN() {
+    let body = document.getElementById("top");
+    body = body.classList;
+    let nav = document.getElementById("nav");
+    nav = nav.classList;
+    let foot = document.getElementById("foot_index");
+    foot = foot.classList;
+
+    body.remove("body_light");
+    body.add("body_night");
+
+    nav.remove("nav_light");
+    nav.add("nav_night");
+
+    foot.remove("footer_light");
+    foot.add("footer_night");
+}
+
+function cambiarADiaIN() {
+    let body = document.getElementById("top");
+    body = body.classList;
+    let nav = document.getElementById("nav");
+    nav = nav.classList;
+    let foot = document.getElementById("foot_index");
+    foot = foot.classList;
+
+    body.remove("body_night");
+    body.add("body_light");
+
+    nav.remove("nav_night");
+    nav.add("nav_light");
+
+    foot.remove("footer_night");
+    foot.add("footer_light");
+
+}
+
+function cambiarANocheEQ() {
+    let body = document.getElementById("top");
+    body = body.classList;
+    let nav = document.getElementById("nav");
+    nav = nav.classList;
+    let foot = document.getElementById("foot_eq");
+    foot = foot.classList;
+
+    body.remove("body_light");
+    body.add("body_night");
+
+    nav.remove("nav_light");
+    nav.add("nav_night");
+
+    foot.remove("footer_light_equipo");
+    foot.add("footer_night_equipo");
+}
+
+function cambiarADiaEQ() {
+    let body = document.getElementById("top");
+    body = body.classList;
+    let nav = document.getElementById("nav");
+    nav = nav.classList;
+    let foot = document.getElementById("foot_eq");
+    foot = foot.classList;
+
+    body.remove("body_night");
+    body.add("body_light");
+
+    nav.remove("nav_night");
+    nav.add("nav_light");
+
+    foot.remove("footer_light_equipo");
+    foot.add("footer_light_equipo");
+
+}
+
+function cambiarANochePO() {
+    let body = document.getElementById("top");
+    body = body.classList;
+    let nav = document.getElementById("nav");
+    nav = nav.classList;
+    let foot = document.getElementById("foot_pos");
+    foot = foot.classList;
+
+    body.remove("body_light");
+    body.add("body_night");
+
+    nav.remove("nav_light");
+    nav.add("nav_night");
+
+    foot.remove("footer_light_pos");
+    foot.add("footer_light_pos");
+}
+
+function cambiarADiaPO() {
+    let body = document.getElementById("top");
+    body = body.classList;
+    let nav = document.getElementById("nav");
+    nav = nav.classList;
+    let foot = document.getElementById("foot_pos");
+    foot = foot.classList;
+
+    body.remove("body_night");
+    body.add("body_light");
+
+    nav.remove("nav_night");
+    nav.add("nav_light");
+
+    foot.remove("footer_light_pos");
+    foot.add("footer_light_pos");
+
+}
+
+function cambiarANochePE() {
+    let body = document.getElementById("top");
+    body = body.classList;
+    let nav = document.getElementById("nav");
+    nav = nav.classList;
+    let foot = document.getElementById("foot_perfil");
+    foot = foot.classList;
+
+    body.remove("body_light");
+    body.add("body_night");
+
+    nav.remove("nav_light");
+    nav.add("nav_night");
+
+    foot.remove("footer_light_perfil");
+    foot.add("footer_light_perfil");
+}
+
+function cambiarADiaPE() {
+    let body = document.getElementById("top");
+    body = body.classList;
+    let nav = document.getElementById("nav");
+    nav = nav.classList;
+    let foot = document.getElementById("foot_perfil");
+    foot = foot.classList;
+
+    body.remove("body_night");
+    body.add("body_light");
+
+    nav.remove("nav_night");
+    nav.add("nav_light");
+
+    foot.remove("footer_light_perfil");
+    foot.add("footer_light_perfil");
+
 }

@@ -13,7 +13,7 @@
 
 <body id="top" class="body_light">
 
-    <div id="nav_light" class="nav_bar fixed_top nav_border">
+    <div id="nav" class="nav_bar fixed_top nav_border nav_light">
         <div class="nav_links">
             <ul class="lista_links">
                 <li class="">
@@ -43,10 +43,10 @@
         <div class="preselect">
             <ul class="lista_preselect">
                 <li class="preselect_links">
-                    <a href=""><img src="../Assets/Images/dark.png" class="img_dark container_dark"></a>
+                    <img src="../Assets/Images/dark.png" class="img_dark container_dark" onclick="cambiarANochePE()">
                 </li>
                 <li class="preselect_links">
-                    <a href=""><img src="../Assets/Images/light.png" class="img_light container_light"></a>
+                    <img src="../Assets/Images/light.png" class="img_light container_light" onclick="cambiarADiaPE()">
                 </li>
 
             </ul>
@@ -128,13 +128,13 @@
             <p id="provincia_P"><span class="span_perfil">Provincia: </span> </p>
             <p id="jugador_P"><span class="span_perfil">Es jugador/a: </span> </p>
             <p id="boton_reiniciar" class="botones_usuario">
-                <input type="button" value="Reiniciar" onclick="window.location.reload()">
+                <input type="button" value="Reiniciar" onclick="reiniciar()">
             </p>
         </div>
 
     </div>
 
-    <div class="footer_light_perfil">
+    <div id="foot_perfil" class="footer_light_perfil">
         <div class="redes">
             <ul class="listaRedes">
                 <li class="nombreRedes">

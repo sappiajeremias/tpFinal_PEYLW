@@ -12,7 +12,7 @@
 
 <body id="top" class="body_light">
 
-    <div id="nav_light" class="nav_bar fixed_top nav_border">
+    <div id="nav" class="nav_bar fixed_top nav_border nav_light">
         <div class="nav_links">
             <ul class="lista_links">
                 <li class="">
@@ -42,10 +42,10 @@
         <div class="preselect">
             <ul class="lista_preselect">
                 <li class="preselect_links">
-                    <a href=""><img src="./Assets/Images/dark.png" class="img_dark container_dark"></a>
+                    <img src="./Assets/Images/dark.png" class="img_dark container_dark" onclick="cambiarANocheIN()">
                 </li>
                 <li class="preselect_links">
-                    <a href=""><img src="./Assets/Images/light.png" class="img_light container_light"></a>
+                    <img src="./Assets/Images/light.png" class="img_light container_light" onclick="cambiarADiaIN()">
                 </li>
 
             </ul>
@@ -137,7 +137,7 @@
     </div>
 
 
-    <div class="footer_light">
+    <div id="foot_index" class="footer_light">
         <div class="redes">
             <ul class="listaRedes">
                 <li class="nombreRedes">
@@ -155,4 +155,6 @@
             </ul>
         </div>
     </div>
+
+    <script src="./scripts.js"></script>
 </body>

@@ -32,7 +32,6 @@ IDS
     margin-top: 50px;
     margin-bottom: 50px;
     border-top: 10px solid;
-    border-color: #4E944F;
     position: relative;
     left: -8px;
 }
@@ -434,7 +433,6 @@ CLASES
 
 .nav_border {
     border-bottom: 10px solid;
-    border-color: #4E944F;
 }
 
 .nav_img {
@@ -503,7 +501,6 @@ CLASES
 }
 
 .redes {
-    background-color: #DDDDDD;
     width: 100%;
 }
 
@@ -612,7 +609,7 @@ CLASES
 
 .titulo_posiciones {
     position: relative;
-    top: 200px;
+    top: 100px;
 }
 
 .text_moneda {
@@ -729,8 +726,6 @@ table tbody tr td {
     color: #15133C;
 }
 
-#noticia_1_texto .img_noticia_reserva {}
-
 #noticia_1_texto h1 {
     font-family: 'Joan', serif;
     font-size: 50px;
@@ -752,7 +747,7 @@ table tbody tr td {
 ESTILOS MODO CLARO
 */
 
-#nav_light {
+.nav_light {
     background-color: #DDDDDD;
 }
 
@@ -770,7 +765,6 @@ ESTILOS MODO CLARO
     left: -8px;
     bottom: -8px;
     border-top: 10px solid;
-    border-color: #4E944F;
 }
 
 .footer_light_equipo {
@@ -782,7 +776,6 @@ ESTILOS MODO CLARO
     bottom: -2655px;
     left: -8px;
     border-top: 10px solid;
-    border-color: #4E944F;
 }
 
 .footer_light_pos {
@@ -794,7 +787,6 @@ ESTILOS MODO CLARO
     bottom: -300px;
     left: -8px;
     border-top: 10px solid;
-    border-color: #4E944F;
 }
 
 .footer_light_perfil {
@@ -806,10 +798,63 @@ ESTILOS MODO CLARO
     bottom: -300px;
     left: 0px;
     border-top: 10px solid;
-    border-color: #4E944F;
 }
 
 
 /*
 ESTILOS MODO OSCURO
 */
+
+.nav_night {
+    background-color: #FFD523;
+}
+
+.body_night {
+    background-color: #B2B1B9;
+    width: 100%;
+}
+
+.footer_night {
+    background-color: #FFD523;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    height: max-content;
+    position: relative;
+    left: -8px;
+    bottom: -8px;
+    border-top: 10px solid;
+    border-color: #2C2E43;
+}
+
+.footer_night_equipo {
+    background-color: #DDDDDD;
+    padding-top: 20px;
+    width: 100%;
+    padding-bottom: 10px;
+    position: relative;
+    bottom: -2655px;
+    left: -8px;
+    border-top: 10px solid;
+}
+
+.footer_night_pos {
+    background-color: #DDDDDD;
+    padding-top: 20px;
+    width: 100%;
+    padding-bottom: 10px;
+    position: relative;
+    bottom: -300px;
+    left: -8px;
+    border-top: 10px solid;
+}
+
+.footer_night_perfil {
+    background-color: #DDDDDD;
+    padding-top: 20px;
+    width: 100%;
+    padding-bottom: 10px;
+    position: absolute;
+    bottom: -300px;
+    left: 0px;
+    border-top: 10px solid;
+}
