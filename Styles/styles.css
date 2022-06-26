@@ -323,6 +323,11 @@ CLASES
     height: 500px;
 }
 
+.img_noticia_padel {
+    width: 700px;
+    height: 500px;
+}
+
 .img_tabla_ct {
     width: 40px;
     height: 35px;
@@ -742,6 +747,18 @@ table tbody tr td {
     padding-bottom: 20px;
 }
 
+#noticia_1_texto p {
+    padding-top: 50px;
+    margin-left: 200px;
+    width: 75%;
+    font-family: 'Joan', serif;
+    font-size: 20px;
+    text-align: left;
+    font-weight: lighter;
+    margin-top: 10px;
+    padding-bottom: 20px;
+}
+
 
 /*
 ESTILOS MODO CLARO
@@ -800,6 +817,17 @@ ESTILOS MODO CLARO
     border-top: 10px solid;
 }
 
+.footer_light_noticia {
+    background-color: #DDDDDD;
+    padding-top: 20px;
+    width: 100%;
+    padding-bottom: 10px;
+    position: absolute;
+    bottom: -600px;
+    left: 0px;
+    border-top: 10px solid;
+}
+
 
 /*
 ESTILOS MODO OSCURO
@@ -827,7 +855,7 @@ ESTILOS MODO OSCURO
 }
 
 .footer_night_equipo {
-    background-color: #DDDDDD;
+    background-color: #FFD523;
     padding-top: 20px;
     width: 100%;
     padding-bottom: 10px;
@@ -838,7 +866,7 @@ ESTILOS MODO OSCURO
 }
 
 .footer_night_pos {
-    background-color: #DDDDDD;
+    background-color: #FFD523;
     padding-top: 20px;
     width: 100%;
     padding-bottom: 10px;
@@ -849,12 +877,23 @@ ESTILOS MODO OSCURO
 }
 
 .footer_night_perfil {
-    background-color: #DDDDDD;
+    background-color: #FFD523;
     padding-top: 20px;
     width: 100%;
     padding-bottom: 10px;
     position: absolute;
     bottom: -300px;
+    left: 0px;
+    border-top: 10px solid;
+}
+
+.footer_night_noticia {
+    background-color: #FFD523;
+    padding-top: 20px;
+    width: 100%;
+    padding-bottom: 10px;
+    position: absolute;
+    bottom: -600px;
     left: 0px;
     border-top: 10px solid;
 }

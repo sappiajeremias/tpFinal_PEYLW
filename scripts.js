@@ -157,7 +157,7 @@ function cambiarANochePO() {
     nav.add("nav_night");
 
     foot.remove("footer_light_pos");
-    foot.add("footer_light_pos");
+    foot.add("footer_night_pos");
 }
 
 function cambiarADiaPO() {
@@ -174,7 +174,7 @@ function cambiarADiaPO() {
     nav.remove("nav_night");
     nav.add("nav_light");
 
-    foot.remove("footer_light_pos");
+    foot.remove("footer_night_pos");
     foot.add("footer_light_pos");
 
 }
@@ -194,7 +194,7 @@ function cambiarANochePE() {
     nav.add("nav_night");
 
     foot.remove("footer_light_perfil");
-    foot.add("footer_light_perfil");
+    foot.add("footer_night_perfil");
 }
 
 function cambiarADiaPE() {
@@ -211,7 +211,44 @@ function cambiarADiaPE() {
     nav.remove("nav_night");
     nav.add("nav_light");
 
-    foot.remove("footer_light_perfil");
+    foot.remove("footer_night_perfil");
     foot.add("footer_light_perfil");
+
+}
+
+function cambiarANocheNOT() {
+    let body = document.getElementById("top");
+    body = body.classList;
+    let nav = document.getElementById("nav");
+    nav = nav.classList;
+    let foot = document.getElementById("foot_not1");
+    foot = foot.classList;
+
+    body.remove("body_light");
+    body.add("body_night");
+
+    nav.remove("nav_light");
+    nav.add("nav_night");
+
+    foot.remove("footer_light_noticia");
+    foot.add("footer_night_noticia");
+}
+
+function cambiarADiaNOT() {
+    let body = document.getElementById("top");
+    body = body.classList;
+    let nav = document.getElementById("nav");
+    nav = nav.classList;
+    let foot = document.getElementById("foot_not1");
+    foot = foot.classList;
+
+    body.remove("body_night");
+    body.add("body_light");
+
+    nav.remove("nav_night");
+    nav.add("nav_light");
+
+    foot.remove("footer_night_noticia");
+    foot.add("footer_light_noticia");
 
 }
