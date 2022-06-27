@@ -323,6 +323,19 @@ CLASES
     height: 500px;
 }
 
+.img_noticia_reserva {
+    width: 800px;
+    height: 500px;
+}
+
+.img_formacion {
+    width: 500px;
+    height: 700px;
+    position: absolute;
+    right: 250px;
+    top: 250px;
+}
+
 .img_noticia_padel {
     width: 700px;
     height: 500px;
@@ -567,7 +580,6 @@ CLASES
 }
 
 .titulo_historia {
-    color: #15133C;
     font-family: 'Red Hat Mono';
     text-decoration: underline;
     text-align: center;
