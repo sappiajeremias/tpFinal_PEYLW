@@ -552,7 +552,7 @@ CLASES
     text-decoration: underline;
 }
 
-.span_perfil {
+span {
     text-decoration: underline;
     padding-right: 10px;
 }
