@@ -361,6 +361,18 @@ CLASES
     width: 75px;
 }
 
+.imgMail:hover {
+    transform: scale(1.05);
+}
+
+.imgGit:hover {
+    transform: scale(1.05);
+}
+
+.imglinkedin:hover {
+    transform: scale(1.05);
+}
+
 .imagen_posiciones {
     width: 20px;
     height: 20px;
