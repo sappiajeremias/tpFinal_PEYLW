@@ -253,34 +253,72 @@ function cambiarADiaNOT() {
 }
 
 function verificar() {
-    let nombre, mail, sexo, provincia, jugador;
+    let jugador;
 
-
-    nombre = document.getElementById("nombre_U").value;
-    mail = document.getElementById("mail_U").value;
-
-    sexo = document.getElementsByName("sexo");
-    provincia = document.getElementById("select_provincias").value;
     jugador = document.getElementsByName("jugador");
 
-    if (nombre == null || mail == null || sexo == null || provincia == 0 || jugador == null || verificarFecha() == false) {
-        alert("Los campos ingresados no son correctos!");
-        return false;
-    } else {
+    if (verificarNombre() && verificarMail() && verificarSexo() && verificarProvincia() && jugador != null && verificarFecha()) {
         return true;
+    } else {
+        return false;
     }
 }
 
 function verificarFecha() {
     let año_act = new Date().getFullYear();
     let fecha = document.getElementById("fecha_U").value;
-
     let nacimiento = parseInt(String(fecha).substring(0, 4));
 
     if ((año_act - nacimiento) >= 18) {
         return true;
     } else {
+        document.getElementById("fecha_U").setAttribute("style", "border: 1px solid red");
         alert("La fecha ingresada es incorrecta. ");
         return false;
+    }
+}
+
+function verificarNombre() {
+    let nombre = document.getElementById("nombre_U").value;
+    if (nombre == "") {
+        alert("El nombre ingresado contiene un error.");
+        document.getElementById("nombre_U").setAttribute("style", "border: 1px solid red");
+        return false;
+    } else {
+        return true;
+    }
+}
+
+function verificarMail() {
+    let mail = document.getElementById("mail_U").value;
+    if (mail == "") {
+        alert("El mail ingresado contiene un error.");
+        document.getElementById("mail_U").setAttribute("style", "border: 1px solid red");
+        return false;
+    } else {
+        return true;
+    }
+}
+
+function verificarSexo() {
+    if (document.getElementsByName("sexo")[0].checked || document.getElementsByName("sexo")[1].checked || document.getElementsByName("sexo")[2].checked) {
+        return true;
+    } else {
+        alert("El sexo ingresado contiene un error.");
+        document.getElementById("sexo1").setAttribute("style", "color: red");
+        document.getElementById("sexo2").setAttribute("style", "color: red");
+        document.getElementById("sexo3").setAttribute("style", "color: red");
+        return false;
+    }
+}
+
+function verificarProvincia() {
+    let provincia = document.getElementById("select_provincias").value;
+    if (provincia == 0) {
+        alert("La provincia ingresada contiene un error.");
+        document.getElementById("select_provincias").setAttribute("style", "border: 1px solid red");
+        return false;
+    } else {
+        return true;
     }
 }

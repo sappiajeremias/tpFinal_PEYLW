@@ -78,6 +78,12 @@ IDS
     text-align: center;
 }
 
+#sexo_u {
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: row;
+}
+
 
 /*
 CLASES
@@ -129,10 +135,12 @@ CLASES
 
 .botones_usuario {
     float: right;
+    margin-top: 75px;
     padding-right: 2.5rem;
 }
 
 .botones_usuario input {
+    z-index: 2;
     background-color: transparent;
     height: 40px;
     width: 110px;
@@ -236,7 +244,6 @@ CLASES
 
 .container_usuario * {
     height: 25px;
-    margin-bottom: 25px;
     margin-left: 15px;
     font-family: 'Joan', serif;
     font-size: 25px;
