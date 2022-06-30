@@ -84,10 +84,28 @@ IDS
     flex-direction: row;
 }
 
+#jugador_u {
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: row;
+}
+
+#posiciones {
+    height: 50px;
+}
+
+#numeros {
+    height: 50px;
+}
+
 
 /*
 CLASES
 */
+
+.oculto {
+    display: none;
+}
 
 .act_noticias {
     font-family: 'Red Hat Mono';
@@ -235,7 +253,7 @@ CLASES
     position: absolute;
     top: 300px;
     margin-left: 75px;
-    height: 350px;
+    height: 425px;
     width: 90%;
     padding-top: 2.5rem;
     padding-left: 2.5rem;
@@ -279,7 +297,6 @@ CLASES
 
 .formulario_usuario {
     margin-left: 75px;
-    height: 350px;
     width: 90%;
     vertical-align: middle;
     border: 2px solid #06283D;
@@ -294,7 +311,6 @@ CLASES
 .formulario_usuario * {
     height: 25px;
     margin-bottom: 25px;
-    margin-left: 15px;
     font-family: 'Joan', serif;
     font-size: 20px;
 }
@@ -537,6 +553,10 @@ CLASES
     margin-left: 25px;
 }
 
+.posicion {
+    position: absolute;
+}
+
 .redes {
     width: 100%;
 }
@@ -668,6 +688,11 @@ span {
     text-decoration: none;
 }
 
+.obligatorio {
+    border: 1px solid red;
+    color: red;
+}
+
 
 /*
 ESTILOS COMBINADOS
@@ -675,7 +700,7 @@ ESTILOS COMBINADOS
 
 .container_usuario #boton_reiniciar {
     position: absolute;
-    top: 350px;
+    top: 375px;
     right: 10px;
 }
 

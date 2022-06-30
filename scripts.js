@@ -23,6 +23,19 @@ function reiniciar() {
     window.location.reload();
 }
 
+function resetear() {
+
+    document.getElementById("nombre_U").removeAttribute("style");
+    document.getElementById("mail_U").removeAttribute("style");
+    document.getElementById("select_provincias").removeAttribute("style");
+    document.getElementById("fecha_U").removeAttribute("style");
+
+    document.getElementById("jugador1").removeAttribute("style");
+    document.getElementById("jugador2").removeAttribute("style");
+    document.getElementById("sexo1").removeAttribute("style");
+    document.getElementById("sexo2").removeAttribute("style");
+    document.getElementById("sexo3").removeAttribute("style");
+}
 
 function mostrarPerfil() {
     //Variables a las que tomamos su value
@@ -63,8 +76,18 @@ function mostrarPerfil() {
         document.getElementById("sexo_P").innerHTML = document.getElementById("sexo_P").innerHTML + sexo;
         document.getElementById("provincia_P").innerHTML = document.getElementById("provincia_P").innerHTML + provincia;
         document.getElementById("jugador_P").innerHTML = document.getElementById("jugador_P").innerHTML + jugador;
+        if (jugador == "SI") {
+            document.getElementById("posicion_P").removeAttribute("hidden");
+            document.getElementById("numero_P").removeAttribute("hidden");
+            let seleccionJugador = document.getElementById("posiciones").selectedIndex;
+            document.getElementById("posicion_P").innerHTML = document.getElementById("posicion_P").innerHTML + document.getElementById("posiciones").options[seleccionJugador].text;
+            let seleccionDorsal = document.getElementById("numeros").selectedIndex;
+            document.getElementById("numero_P").innerHTML = document.getElementById("numero_P").innerHTML + document.getElementById("numeros").options[seleccionDorsal].text;
+        }
     }
 }
+
+
 
 
 function cambiarANocheIN() {
@@ -253,16 +276,74 @@ function cambiarADiaNOT() {
 }
 
 function verificar() {
-    let jugador;
+    let verificado = false;
+    let arregloVerif = [];
+    let iJugador = document.getElementsByName("jugador");
+    arregloVerif["nombre"] = document.getElementById("nombre_U");
+    arregloVerif["mail"] = document.getElementById("mail_U");
+    arregloVerif["provincia"] = document.getElementById("select_provincias");
+    arregloVerif["fecha"] = document.getElementById("fecha_U");
+    arregloVerif["posicion"] = document.getElementById("posiciones");
 
-    jugador = document.getElementsByName("jugador");
+    for (const index in arregloVerif) {
+        if (validarDatos(index)) {
+            arregloVerif[index].removeAttribute("style");
+            verificado = true;
+        } else {
+            arregloVerif[index].setAttribute("style", "color: red; border: 1px solid red");
+            verificado = false;
+        }
+    }
+    let jugador = verificarJugador();
+    let sexo = verificarSexo();
 
-    if (verificarNombre() && verificarMail() && verificarSexo() && verificarProvincia() && jugador != null && verificarFecha()) {
+    if (verificado == true && jugador == true && sexo == true) {
         return true;
     } else {
         return false;
     }
+
+
 }
+
+function validarDatos(index) {
+    let verif = false;
+    switch (index) {
+        case "nombre":
+            {
+                verif = verificarNombre();
+                break;
+            }
+        case "mail":
+            {
+                verif = verificarMail();
+                break;
+            }
+        case "provincia":
+            {
+                verif = verificarProvincia();
+                break;
+            }
+        case "fecha":
+            {
+                verif = verificarFecha();
+                break;
+            }
+        case "posicion":
+            {
+                if (document.getElementsByName("jugador")[1].checked) {
+                    return true;
+                } else {
+
+
+                    verif = verificarPosicion();
+                }
+                break;
+            }
+    }
+    return verif;
+}
+
 
 function verificarFecha() {
     let año_act = new Date().getFullYear();
@@ -272,39 +353,48 @@ function verificarFecha() {
     if ((año_act - nacimiento) >= 18) {
         return true;
     } else {
-        document.getElementById("fecha_U").setAttribute("style", "border: 1px solid red");
-        alert("La fecha ingresada es incorrecta. ");
         return false;
     }
 }
 
 function verificarNombre() {
+    expresionRegular = {
+        nombre: /^[a-zA-Z]{3,30}/,
+        email: /[a-zA-Z0-9._-]+@[a-zA-Z0-9._-]+\.\w+/,
+        telefono: /^[0-9]{0,10}$/,
+        contraseña: /^.{5,30}$/
+    };
     let nombre = document.getElementById("nombre_U").value;
-    if (nombre == "") {
-        alert("El nombre ingresado contiene un error.");
-        document.getElementById("nombre_U").setAttribute("style", "border: 1px solid red");
-        return false;
-    } else {
+    if (expresionRegular.nombre.test(nombre)) {
         return true;
+    } else {
+        return false;
     }
 }
 
 function verificarMail() {
+    expresionRegular = {
+        nombre: /^[a-zA-Z]{3,30}/,
+        email: /[a-zA-Z0-9._-]+@[a-zA-Z0-9._-]+\.\w+/,
+        telefono: /^[0-9]{0,10}$/,
+        contraseña: /^.{5,30}$/
+    };
     let mail = document.getElementById("mail_U").value;
-    if (mail == "") {
-        alert("El mail ingresado contiene un error.");
-        document.getElementById("mail_U").setAttribute("style", "border: 1px solid red");
-        return false;
-    } else {
+
+    if (expresionRegular.email.test(mail)) {
         return true;
+    } else {
+        return false;
     }
 }
 
 function verificarSexo() {
     if (document.getElementsByName("sexo")[0].checked || document.getElementsByName("sexo")[1].checked || document.getElementsByName("sexo")[2].checked) {
+        document.getElementById("sexo1").removeAttribute("style");
+        document.getElementById("sexo2").removeAttribute("style");
+        document.getElementById("sexo3").removeAttribute("style");
         return true;
     } else {
-        alert("El sexo ingresado contiene un error.");
         document.getElementById("sexo1").setAttribute("style", "color: red");
         document.getElementById("sexo2").setAttribute("style", "color: red");
         document.getElementById("sexo3").setAttribute("style", "color: red");
@@ -315,10 +405,44 @@ function verificarSexo() {
 function verificarProvincia() {
     let provincia = document.getElementById("select_provincias").value;
     if (provincia == 0) {
-        alert("La provincia ingresada contiene un error.");
-        document.getElementById("select_provincias").setAttribute("style", "border: 1px solid red");
         return false;
     } else {
         return true;
     }
+}
+
+function verificarPosicion() {
+    let posicion = document.getElementById("posiciones").value;
+    if (posicion == 0) {
+        return false;
+    } else {
+        return true;
+    }
+}
+
+
+function verificarJugador() {
+    if (document.getElementsByName("jugador")[0].checked) {
+        document.getElementById("jugador1").removeAttribute("style");
+        document.getElementById("jugador2").removeAttribute("style");
+        return true;
+    } else if (document.getElementsByName("jugador")[1].checked) {
+        document.getElementById("jugador1").removeAttribute("style");
+        document.getElementById("jugador2").removeAttribute("style");
+        return true;
+    } else {
+        document.getElementById("jugador1").setAttribute("style", "color:red");
+        document.getElementById("jugador2").setAttribute("style", "color:red");
+        return false;
+    }
+}
+
+function agregarOpcion() {
+    let posiciones = document.getElementById("select_posiciones");
+    posiciones.removeAttribute("hidden");
+}
+
+function eliminarOpcion() {
+    let posiciones = document.getElementById("select_posiciones");
+    posiciones.setAttribute("hidden", true);
 }
