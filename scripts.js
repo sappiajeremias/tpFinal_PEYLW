@@ -35,6 +35,8 @@ function resetear() {
     document.getElementById("sexo1").removeAttribute("style");
     document.getElementById("sexo2").removeAttribute("style");
     document.getElementById("sexo3").removeAttribute("style");
+
+    document.getElementById("select_posiciones").setAttribute("hidden", true);
 }
 
 function mostrarPerfil() {
